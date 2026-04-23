@@ -14,7 +14,6 @@
         <div class="logo">
             <i class="fa-solid fa-earth-americas"></i>
         </div>
-        <!-- Mobile Menu Toggle Button -->
         <div id="sidebar-toggle" class="sidebar-toggle" aria-label="Open Menu">
             <span></span>
             <span></span>
@@ -25,9 +24,10 @@
     <!-- Sidebar Navigation -->
     <nav id="sidebar" class="sidebar">
         <div class="sidebar-header">
-            <h2>Estações</h2>
+            <h2>Navegação</h2>
         </div>
         <ul class="nav-links">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Início</a></li>
             <li><a href="verao.html"><i class="fa-solid fa-sun"></i> Verão</a></li>
             <li><a href="outono.html"><i class="fa-solid fa-leaf"></i> Outono</a></li>
             <li><a href="inverno.html"><i class="fa-solid fa-snowflake"></i> Inverno</a></li>
@@ -35,54 +35,82 @@
         </ul>
     </nav>
 
-    <!-- Overlay to dim background when sidebar is open -->
     <div id="sidebar-overlay" class="overlay"></div>
 
     <header>
         <h1>Estações do Ano</h1>
-        <div class="icons">
-            <i class="fa-solid fa-sun"></i>
-            <i class="fa-solid fa-leaf"></i>
-            <i class="fa-solid fa-snowflake"></i>
-            <i class="fa-solid fa-seedling"></i>
+        <div class="header-icons">
+            <i class="fa-solid fa-sun" style="color: #ffb800;"></i>
+            <i class="fa-solid fa-leaf" style="color: #e67e22;"></i>
+            <i class="fa-solid fa-snowflake" style="color: #00a8ff;"></i>
+            <i class="fa-solid fa-seedling" style="color: #2ecc71;"></i>
         </div>
     </header>
 
     <main>
-        <section>
-            <div class="titles">
-                <h1>Conheça todas as estações existentes</h1>
-                <p>As estações do ano são períodos em que o clima, a temperatura e a paisagem mudam de forma característica. Elas ocorrem devido à inclinação do eixo da Terra em relação ao Sol.</p>
+        <section class="section-title">
+            <h2>Descubra a Dança do Tempo</h2>
+            <p>Explore as mudanças cíclicas que transformam nosso planeta a cada três meses, trazendo novas cores, temperaturas e vida.</p>
+        </section>
+
+        <section class="cards-container">
+            <div class="card" id="verao">
+                <img src="assets/img/pexels-ryandelfin-2270389.jpg" alt="Paisagem de Verão">
+                <div class="card-content">
+                    <h3>Verão</h3>
+                    <p>A estação da luz intensa e dias intermináveis.</p>
+                </div>
             </div>
-           <div class="cards">
-                <div class="card">
-                    <img src="assets/img/pexels-ryandelfin-2270389.jpg" alt="">
-                    <h2>Verão</h2>
-                    <p>O verão é a estação mais quente do ano, caracterizada por dias longos e noites curtas.</p>
+            <div class="card" id="outono">
+                <img src="assets/img/pexels-nati-87264186-34792899.jpg" alt="Paisagem de Outono">
+                <div class="card-content">
+                    <h3>Outono</h3>
+                    <p>O momento da colheita e das folhas douradas.</p>
                 </div>
-                <div class="card">
-                    <img src="assets/img/pexels-nati-87264186-34792899.jpg" alt="">
-                    <h2>Outono</h2>
-                    <p>O outono é a estação em que as folhas das árvores caem, caracterizada por dias mais curtos e noites mais longas.</p>
+            </div>
+            <div class="card" id="inverno">
+                <img src="assets/img/pexels-magda-ehlers-pexels-35636206.jpg" alt="Paisagem de Inverno">
+                <div class="card-content">
+                    <h3>Inverno</h3>
+                    <p>O silêncio do frio e a beleza da neve.</p>
                 </div>
-                <div class="card">
-                    <img src="assets/img/pexels-magda-ehlers-pexels-35636206.jpg" alt="">
-                    <h2>Inverno</h2>
-                    <p>O inverno é a estação mais fria do ano, caracterizada por dias curtos e noites longas.</p>
-                </div>
-                <div class="card">
-                    <img src="assets/img/pexels-hemildhanani-12527494.jpg" alt="">
-                    <h2>Primavera</h2>
-                    <p>A primavera é a estação em que as flores desabrocham, caracterizada por dias mais longos e noites mais curtas.</p>
+            </div>
+            <div class="card" id="primavera">
+                <img src="assets/img/pexels-hemildhanani-12527494.jpg" alt="Paisagem de Primavera">
+                <div class="card-content">
+                    <h3>Primavera</h3>
+                    <p>O renascimento da natureza em cada flor.</p>
                 </div>
             </div>
         </section>
-        <section>
-            
+
+        <section class="info-section">
+            <div class="info-text">
+                <h2>Por que as estações existem?</h2>
+                <p>Muitos acreditam que as estações mudam devido à distância da Terra em relação ao Sol. <strong>Este é um dos mitos mais comuns da astronomia!</strong></p>
+                <p>O verdadeiro motivo é a inclinação de 23,5 graus do eixo terrestre, que faz com que diferentes hemisférios recebam luz solar com intensidades variadas ao longo do ano.</p>
+                
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                        <span><strong>Luz Direta:</strong> No verão, os raios solares atingem a superfície de forma perpendicular, concentrando energia.</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-arrow-trend-down"></i>
+                        <span><strong>Luz Rasante:</strong> No inverno, a inclinação faz a luz se espalhar, perdendo intensidade calorífica.</span>
+                    </div>
+                </div>
+
+                <a href="#" class="btn-learn-more">Explorar Solstícios <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="info-image">
+                <i class="fa-solid fa-earth-americas fa-10x" style="color: var(--primary); opacity: 0.1;"></i>
+            </div>
         </section>
     </main>
+
     <footer>
-        <p></p>
+        <p>© 2025 Crônicas das Estações. A harmonia entre o céu e a terra.</p>
     </footer>
 
     <script src="assets/js/script.js" defer></script>
