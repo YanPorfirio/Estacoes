@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     cards.forEach(card => {
         card.addEventListener('click', () => {
             const id = card.id;
-            if (id) window.location.href = `${id}.html`;
+            if (id) window.location.href = `pages/${id}.html`;
         });
     });
 
@@ -52,12 +52,27 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    // Apply reveal to sections and cards
+    // Apply reveal to sections and cards on index page
     const revealElements = document.querySelectorAll('.cards-container, .info-section, .section-title');
     revealElements.forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(40px)';
         el.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
         revealObserver.observe(el);
+    });
+
+    // Custom Scroll Reveal for Season Pages
+    const customRevealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                customRevealObserver.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    const customRevealElements = document.querySelectorAll('.reveal-on-scroll');
+    customRevealElements.forEach(el => {
+        customRevealObserver.observe(el);
     });
 });
