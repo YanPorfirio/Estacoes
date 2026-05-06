@@ -1,37 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore as estações do ano, seus solstícios, equinócios e os efeitos da inclinação da Terra.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Estações do Ano</title>
 </head>
 <body>
-    <!-- Top Navigation Bar -->
     <div class="navbar-top">
-        <div class="logo">
-            <i class="fa-solid fa-earth-americas"></i>
-        </div>
-        <div id="sidebar-toggle" class="sidebar-toggle" aria-label="Open Menu">
+        <a class="logo" href="index.html" aria-label="Página inicial">
+            <i class="fa-solid fa-earth-americas" aria-hidden="true"></i>
+        </a>
+        <button id="sidebar-toggle" class="sidebar-toggle" type="button" aria-label="Abrir menu" aria-controls="sidebar" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
-        </div>
+        </button>
     </div>
 
-    <label class="switch">
-        <input type="checkbox" id="theme-toggle">
-        <span class="slider">
-            <i class="sun-icon">☀️</i>
-            <i class="moon-icon">🌙</i>
-        </span>
-    </label>
- 
-
-    <!-- Sidebar Navigation -->
-    <nav id="sidebar" class="sidebar">
+    <nav id="sidebar" class="sidebar" aria-label="Navegação principal">
         <div class="sidebar-header">
             <h2>Navegação</h2>
         </div>
@@ -48,11 +42,11 @@
 
     <header>
         <h1>Estações do Ano</h1>
-        <div class="header-icons">
-            <i class="fa-solid fa-sun" style="color: #ffb800;"></i>
-            <i class="fa-solid fa-leaf" style="color: #e67e22;"></i>
-            <i class="fa-solid fa-snowflake" style="color: #00a8ff;"></i>
-            <i class="fa-solid fa-seedling" style="color: #2ecc71;"></i>
+        <div class="header-icons" aria-hidden="true">
+            <i class="fa-solid fa-sun icon-summer"></i>
+            <i class="fa-solid fa-leaf icon-autumn"></i>
+            <i class="fa-solid fa-snowflake icon-winter"></i>
+            <i class="fa-solid fa-seedling icon-spring"></i>
         </div>
     </header>
 
@@ -63,34 +57,34 @@
         </section>
 
         <section class="cards-container">
-            <div class="card" id="verao">
-                <img src="assets/img/pexels-ryandelfin-2270389.jpg" alt="Paisagem de Verão">
+            <a class="card" href="pages/verao.html" id="verao" aria-label="Conhecer o verão">
+                <img src="assets/img/optimized/pexels-ryandelfin-2270389.jpg" alt="Paisagem de verão com céu claro e luz intensa" width="1200" height="1800" decoding="async" fetchpriority="high">
                 <div class="card-content">
                     <h3>Verão</h3>
                     <p>A estação da luz intensa e dias intermináveis.</p>
                 </div>
-            </div>
-            <div class="card" id="outono">
-                <img src="assets/img/pexels-nati-87264186-34792899.jpg" alt="Paisagem de Outono">
+            </a>
+            <a class="card" href="pages/outono.html" id="outono" aria-label="Conhecer o outono">
+                <img src="assets/img/optimized/pexels-nati-87264186-34792899.jpg" alt="Paisagem de outono com tons dourados" width="1200" height="1800" loading="lazy" decoding="async">
                 <div class="card-content">
                     <h3>Outono</h3>
                     <p>O momento da colheita e das folhas douradas.</p>
                 </div>
-            </div>
-            <div class="card" id="inverno">
-                <img src="assets/img/pexels-magda-ehlers-pexels-35636206.jpg" alt="Paisagem de Inverno">
+            </a>
+            <a class="card" href="pages/inverno.html" id="inverno" aria-label="Conhecer o inverno">
+                <img src="assets/img/optimized/pexels-magda-ehlers-pexels-35636206.jpg" alt="Paisagem de inverno com neve" width="1201" height="1800" loading="lazy" decoding="async">
                 <div class="card-content">
                     <h3>Inverno</h3>
                     <p>O silêncio do frio e a beleza da neve.</p>
                 </div>
-            </div>
-            <div class="card" id="primavera">
-                <img src="assets/img/pexels-hemildhanani-12527494.jpg" alt="Paisagem de Primavera">
+            </a>
+            <a class="card" href="pages/primavera.html" id="primavera" aria-label="Conhecer a primavera">
+                <img src="assets/img/optimized/pexels-hemildhanani-12527494.jpg" alt="Paisagem de primavera com flores" width="1200" height="1800" loading="lazy" decoding="async">
                 <div class="card-content">
                     <h3>Primavera</h3>
                     <p>O renascimento da natureza em cada flor.</p>
                 </div>
-            </div>
+            </a>
         </section>
 
         <section class="info-section">
@@ -112,8 +106,8 @@
 
                 <a href="pages/verao.html" class="btn-learn-more">Explorar Solstícios <i class="fa-solid fa-arrow-right"></i></a>
             </div>
-            <div class="info-image">
-                <i class="fa-solid fa-earth-americas fa-10x" style="color: var(--primary); opacity: 0.1;"></i>
+            <div class="info-image" aria-hidden="true">
+                <i class="fa-solid fa-earth-americas fa-10x"></i>
             </div>
         </section>
     </main>

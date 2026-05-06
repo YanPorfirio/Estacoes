@@ -3,25 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça o equinócio de outono, a queda das folhas, a colheita e a transição para dias mais frios.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Outono | Equinócio</title>
 </head>
 <body>
-    <!-- Top Navigation Bar -->
     <div class="navbar-top">
-        <div class="logo">
-            <i class="fa-solid fa-earth-americas"></i>
-        </div>
-        <div id="sidebar-toggle" class="sidebar-toggle" aria-label="Open Menu">
+        <a class="logo" href="../index.html" aria-label="Página inicial">
+            <i class="fa-solid fa-earth-americas" aria-hidden="true"></i>
+        </a>
+        <button id="sidebar-toggle" class="sidebar-toggle" type="button" aria-label="Abrir menu" aria-controls="sidebar" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
-        </div>
+        </button>
     </div>
 
-    <!-- Sidebar Navigation -->
-    <nav id="sidebar" class="sidebar">
+    <nav id="sidebar" class="sidebar" aria-label="Navegação principal">
         <div class="sidebar-header">
             <h2>Estações</h2>
         </div>
@@ -35,24 +39,20 @@
     </nav>
     <div id="sidebar-overlay" class="overlay"></div>
 
-    <!-- Parallax Hero Banner -->
-    <header class="hero-banner" style="background-image: url('../assets/img/pexels-nati-87264186-34792899.jpg');">
+    <header class="hero-banner hero-outono">
         <div class="hero-content">
             <h1>Outono</h1>
             <p>O momento da colheita e das folhas douradas</p>
         </div>
     </header>
 
-    <!-- Main Content -->
     <main class="season-content">
-        <!-- Custom Info Section -->
         <section class="glass-panel reveal-on-scroll">
             <h2>O Equinócio de Outono</h2>
             <p>O equinócio de outono é um fenômeno astronômico onde o dia e a noite têm a mesma duração. Ele marca a transição do verão para o inverno, um período onde a natureza começa a se preparar para o repouso.</p>
             <p>Culturalmente, é a época da colheita. As folhas das árvores decíduas perdem sua clorofila, revelando tons deslumbrantes de amarelo, laranja e vermelho antes de caírem. O clima torna-se ameno, convidando à introspecção e ao aconchego.</p>
         </section>
 
-        <!-- Feature Cards -->
         <section class="cards-grid reveal-on-scroll">
             <div class="feature-card">
                 <i class="fa-brands fa-canadian-maple-leaf"></i>
